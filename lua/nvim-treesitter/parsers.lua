@@ -66,6 +66,8 @@ local list = setmetatable({}, {
   end,
 })
 
+local gitUrl = "https://lgithub.xyz"
+
 list.ada = {
   install_info = {
     url = "https://github.com/briot/tree-sitter-ada",
@@ -210,7 +212,7 @@ list.bp = {
 
 list.c = {
   install_info = {
-    url = "https://github.com/tree-sitter/tree-sitter-c",
+    url = gitUrl.."/tree-sitter/tree-sitter-c",
     files = { "src/parser.c" },
   },
   maintainers = { "@amaanq" },
@@ -218,7 +220,7 @@ list.c = {
 
 list.c_sharp = {
   install_info = {
-    url = "https://github.com/tree-sitter/tree-sitter-c-sharp",
+    url = gitUrl.."/tree-sitter/tree-sitter-c-sharp",
     files = { "src/parser.c", "src/scanner.c" },
   },
   filetype = "cs",
@@ -267,7 +269,7 @@ list.clojure = {
 
 list.cmake = {
   install_info = {
-    url = "https://github.com/uyha/tree-sitter-cmake",
+    url = gitUrl.."/uyha/tree-sitter-cmake",
     files = { "src/parser.c", "src/scanner.c" },
   },
   maintainers = { "@uyha" },
@@ -318,7 +320,7 @@ list.cpon = {
 
 list.cpp = {
   install_info = {
-    url = "https://github.com/tree-sitter/tree-sitter-cpp",
+    url = gitUrl.."/tree-sitter/tree-sitter-cpp",
     files = { "src/parser.c", "src/scanner.c" },
     generate_requires_npm = true,
   },
@@ -1320,7 +1322,7 @@ list.liquidsoap = {
 
 list.lua = {
   install_info = {
-    url = "https://github.com/MunifTanjim/tree-sitter-lua",
+    url = gitUrl.."/MunifTanjim/tree-sitter-lua",
     files = { "src/parser.c", "src/scanner.c" },
   },
   maintainers = { "@muniftanjim" },
@@ -1816,7 +1818,7 @@ list.pymanifest = {
 
 list.python = {
   install_info = {
-    url = "https://github.com/tree-sitter/tree-sitter-python",
+    url = gitUrl.."/tree-sitter/tree-sitter-python",
     files = { "src/parser.c", "src/scanner.c" },
   },
   maintainers = { "@stsewd", "@theHamsta" },
